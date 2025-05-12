@@ -1,0 +1,30 @@
+.social-media-links {
+    grid-column: span 1;
+    grid-row: 2;
+    background-color: #F6F1E3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: left;
+    font-size: 1.2rem;
+}
+
+.social-media-links li {
+    padding: 10px 0;
+}
+
+.social-media-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.social-media-links li a:hover {
+    color: #FF6F3F;
+}

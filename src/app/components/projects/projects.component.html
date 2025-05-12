@@ -1,15 +1,22 @@
 <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project-grid">
-        <div class="project">
-            <img src="assets/img/project1.jpg" alt="Project 1">
-            <h3>Project Title 1</h3>
-            <p>Description of the project goes here.</p>
-        </div>
-        <div class="project">
-            <img src="assets/img/project2.jpg" alt="Project 2">
-            <h3>Project Title 2</h3>
-            <p>Description of the project goes here.</p>
-        </div>
+    <div class="filter-buttons">
+      <button *ngFor="let category of categories" (click)="filterProjects(category)">
+        {{ category }}
+      </button>
     </div>
-</section>
+    <div class="project-list" id="project-list">
+      <div class="project-card" *ngFor="let project of filteredProjects">
+        <h3>{{ project.title }}</h3>
+        <img [src]="project.image" [alt]="project.title" class="project-image">
+        <div class="project-buttons">
+          <a [href]="project.github" target="_blank" class="btn">
+            <img src="github.png" alt="GitHub Icon" class="icon">
+          </a>
+          <a [href]="project.live" target="_blank" class="btn">
+            <img src="click.png" alt="Live Site Icon" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>

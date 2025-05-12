@@ -1,0 +1,81 @@
+.project-list {
+    grid-column: span 4;
+    background-color: #F1EBDD;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    grid-column: span 3;
+    font-size: 3em;
+    font-weight: 20;
+}
+
+.project-list h2{
+    color:rgb(52, 76, 54) ;
+}
+
+.project-link {
+    text-decoration: none;
+}
+
+.project-card {
+    background-color: #fdfaf2;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.project-card h3 {
+    font-size: 1.2em;
+    color: #333;
+    padding-bottom: 10px;
+    margin: 0;
+}
+
+.project-link:hover h3 {
+    color: #344C36;
+}
+
+project-buttons {
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e8e2d2;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+
+}
