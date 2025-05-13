@@ -12,7 +12,7 @@
     padding: 30px 20px;
 }
 
-.contact-box a {
+ a {
     margin-top: 10px;
     color: #F1EBDD;
     padding: 10px 20px;
@@ -23,6 +23,6 @@
 }
 
 
-.contact-box a:hover {
+ a:hover {
     color: #837961;
 }

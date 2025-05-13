@@ -1,23 +1,22 @@
-<section id="projects" class="section">
-
-    <div class="project-list" id="project-list">
-        <h2>Projects</h2>
-        <div class="filter-buttons">
-            <button *ngFor="let category of categories" (click)="filterProjects(category)">
-                {{ category }}
-            </button>
-        </div>
-        <div class="project-card" *ngFor="let project of filteredProjects">
-            <h3>{{ project.title }}</h3>
-            <img [src]="project.image" [alt]="project.title" class="project-image">
-            <div class="project-buttons">
-                <a [href]="project.github" target="_blank" class="btn">
-                    <img src="github.png" alt="GitHub Icon" class="icon">
-                </a>
-                <a [href]="project.live" target="_blank" class="btn">
-                    <img src="click.png" alt="Live Site Icon" class="icon">
-                </a>
-            </div>
-        </div>
+<div class="filter-and-projects">
+    <div class="filter-buttons">
+      <button *ngFor="let category of categories" 
+              (click)="filterProjects(category)">
+        {{ category }}
+      </button>
     </div>
-</section>
+    <div class="projects-grid">
+      <div class="project-card" *ngFor="let project of filteredProjects">
+        <h3>{{ project.title }}</h3>
+        <img [src]="project.image" [alt]="project.title" class="project-image">
+        <div class="project-buttons">
+          <a [href]="project.github" target="_blank" class="btn">
+            <img src="github.png" alt="GitHub Icon" class="icon">
+          </a>
+          <a [href]="project.live" target="_blank" class="btn">
+            <img src="click.png" alt="Live Site Icon" class="icon">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
