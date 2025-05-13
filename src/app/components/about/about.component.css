@@ -4,14 +4,13 @@
     background-color: #F1EBDD;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
 }
 
-.title-box h2 {
+h2 {
     text-align: left;    
     font-size: 2em;
     line-height: 1.5;
@@ -35,4 +34,20 @@
     border-radius: 10px;
     object-fit: cover;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .title-box{
+        flex-direction: column;
+    }
+
+    .title-box {
+        grid-row: 1;
+        padding: 15px;
+    }
+
+    .personal-photo img {
+        max-width: 100%;
+    }
+
 }

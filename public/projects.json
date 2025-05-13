@@ -33,5 +33,40 @@
         "github": "https://github.com/MaritaThuriAnna/hamburger-menu",
         "live": "https://maritathurianna.github.io/backtotop/",
         "category": "Web Application"
+    },
+    {
+        "title": "Expense Tracker",
+        "image": "expense-tracker.png",
+        "github": "https://github.com/andricolae/expense-tracker",
+        "live": "https://expense-tracker-ntt.vercel.app/",
+        "category": "Angular"
+    },
+    {
+        "title": "To Do App",
+        "image": "to-do.png",
+        "github": "https://github.com/MaritaThuriAnna/angular-todo-app",
+        "live": "https://angular-todo-app-b787.vercel.app/",
+        "category": "Angular"
+    },
+    {
+        "title": "Multi Language Page",
+        "image": "responsive.png",
+        "github": "https://github.com/MaritaThuriAnna/responsive-site-angular",
+        "live": "https://responsive-site-angular.vercel.app/",
+        "category": "Angular"
+    },
+    {
+        "title": "School Manager",
+        "image": "school-mngr.png",
+        "github": "https://github.com/MaritaThuriAnna/school-mngr",
+        "live": "https://school-mngr-nine.vercel.app/",
+        "category": "Angular"
+    },
+    {
+        "title": "Plant Pal",
+        "image": "plant-pal.png",
+        "github": "https://github.com/MaritaThuriAnna/plant-pal",
+        "live": "https://plant-pal-six.vercel.app/",
+        "category": "Angular"
     }
 ]
